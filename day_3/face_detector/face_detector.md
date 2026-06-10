@@ -1,2 +1,13 @@
+FACE RECOGINITION SYSTEM
+
+This project describes a simplified hardware implementation of a face recognition data processing system using Verilog. The system is designed using three main modules: the Face module, FIFO module, and Mod_Out module. These modules work together in a pipeline structure to handle 8-bit input data, store it temporarily, and produce a delayed processed output suitable for recognition-style applications.
+
+The Face module is the first stage of the system. It is responsible for capturing 8-bit input data representing face-related information or features. The module operates synchronously with the system clock and updates its output at every positive edge of the clock signal. When the reset signal is active, the output is cleared to zero. Otherwise, the input data is directly registered and passed to the next stage. This module ensures continuous and stable sampling of incoming data without loss.
+
+The FIFO module acts as an intermediate buffering stage between the Face module and the processing stage. It stores the incoming 8-bit data in a first-in-first-out order, ensuring that data is processed in the same sequence in which it arrives. The FIFO is controlled using write enable and read enable signals along with the clock and reset signals. It also provides status signals such as full and empty to indicate its storage state. This module is essential for handling timing mismatches between input capture and output processing, ensuring smooth data flow across the system.
+
+The Mod_Out module is the final processing stage of the system. It receives 8-bit data as input and produces the output after a fixed delay of three clock cycles. This delay simulates processing time typically required in recognition or computation systems. Internally, the module stores incoming data and shifts it through internal registers or counters before producing the final output. The output is updated only after the completion of three clock cycles, ensuring a controlled and synchronized delay in the system response.
+
+Overall, the system operates in a sequential pipeline manner. The Face module continuously captures input data on every clock cycle, the FIFO module temporarily stores and manages the data flow, and the Mod_Out module introduces a controlled processing delay before generating the final output. This architecture ensures proper synchronization, avoids data loss, and simulates realistic processing behavior similar to hardware-based face recognition systems.
 <img width="1060" height="514" alt="image" src="https://github.com/user-attachments/assets/71ed6042-3181-413b-bfb1-1fc0a0697d26" />
 
