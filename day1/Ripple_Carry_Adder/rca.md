@@ -8,7 +8,6 @@ Although simple in design, the ripple carry adder is widely used in digital syst
 2. Objective
 
 The main objectives of this design are:
-
 To design a 4-bit Ripple Carry Adder using Verilog HDL.
 To perform binary addition of two 4-bit inputs.
 To generate correct sum and carry outputs.
@@ -38,7 +37,6 @@ outputs
 6. Working Principle
 
 The Ripple Carry Adder operates based on full adder logic. Each full adder performs binary addition using the inputs A, B, and Cin. The sum is generated using the XOR operation, while the carry is generated using AND and OR operations. The addition begins from the least significant bit, and the carry generated from each stage is passed to the next stage.
-
 Since the carry must propagate through all full adders, the final output is obtained only after the carry reaches the most significant bit. This sequential propagation introduces delay, which is the main limitation of the ripple carry adder.
 
 7. Verilog Implementation Overview
@@ -57,10 +55,10 @@ Test cases
 
 | A (4-bit) | B (4-bit) | Cin | Expected Sum | Cout |
 | --------- | --------- | --- | ------------ | ---- |
-| 0110      | 1000      | 1   | 1111         | 0    |
-| 1001      | 0000      | 0   | 1001         | 0    |
-| 0011      | 1001      | 1   | 1101         | 0    |
-| 0010      | 0001      | 1   | 0100         | 0    |
+| 0000      | 0000      | 0   | 0000         | 0    |
+| 0010      | 0100      | 1   | 0110         | 0    |
+| 0001      | 0010      | 0   | 0011         | 0    |
+| 0011      | 0000      | 1   | 0110         | 0    |
 
 
 
