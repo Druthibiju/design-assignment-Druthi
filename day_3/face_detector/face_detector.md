@@ -9,5 +9,7 @@ The FIFO module acts as an intermediate buffering stage between the Face module 
 The Mod_Out module is the final processing stage of the system. It receives 8-bit data as input and produces the output after a fixed delay of three clock cycles. This delay simulates processing time typically required in recognition or computation systems. Internally, the module stores incoming data and shifts it through internal registers or counters before producing the final output. The output is updated only after the completion of three clock cycles, ensuring a controlled and synchronized delay in the system response.
 
 Overall, the system operates in a sequential pipeline manner. The Face module continuously captures input data on every clock cycle, the FIFO module temporarily stores and manages the data flow, and the Mod_Out module introduces a controlled processing delay before generating the final output. This architecture ensures proper synchronization, avoids data loss, and simulates realistic processing behavior similar to hardware-based face recognition systems.
+
+OUTPUT WAVEFORM
 <img width="1060" height="514" alt="image" src="https://github.com/user-attachments/assets/71ed6042-3181-413b-bfb1-1fc0a0697d26" />
 
