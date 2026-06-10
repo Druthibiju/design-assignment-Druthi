@@ -22,16 +22,18 @@ The Ripple Carry Adder is built using a series of full adders. Each full adder p
 
 Inputs
 
-Signal	  Width	    Description
-a	        4-bit  	First binary input
-b	        4-bit	  Second binary input
-cin       1-bit	  Initial carry input
+| Signal | Width | Description         |
+| ------ | ----- | ------------------- |
+| a      | 4-bit | First binary input  |
+| b      | 4-bit | Second binary input |
+| cin    | 1-bit | Initial carry input |
 
-Outputs
+outputs
+| Signal | Width | Description               |
+| ------ | ----- | ------------------------- |
+| sum    | 4-bit | Result of binary addition |
+| cout   | 1-bit | Final carry output        |
 
-Signal	     Width	  Description
-sum	         4-bit	   Result of binary addition
-cout	       1-bit	   Final carry output
 
 6. Working Principle
 
@@ -50,6 +52,16 @@ The testbench is used to verify the correctness of the Ripple Carry Adder design
 9.Simulation Procedure
 
 The design is simulated using a Verilog simulator such as Vivado. First, a new project is created, and the design file containing the ripple carry adder is added. Then, the testbench file is included and set as the top module for simulation. After running behavioral simulation, the waveform is observed to verify the correctness of sum and carry outputs. The results confirm proper operation of the adder for all test cases.
+
+Test cases
+
+| A (4-bit) | B (4-bit) | Cin | Expected Sum | Cout |
+| --------- | --------- | --- | ------------ | ---- |
+| 0110      | 1000      | 1   | 1111         | 0    |
+| 1001      | 0000      | 0   | 1001         | 0    |
+| 0011      | 1001      | 1   | 1101         | 0    |
+| 0010      | 0001      | 1   | 0100         | 0    |
+
 
 
 Circuit diagram
