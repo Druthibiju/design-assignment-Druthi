@@ -44,6 +44,7 @@ The encoder is implemented using an always @(*) block, making it a purely combin
 The testbench verifies the encoder functionality by applying different one-hot input combinations. Each input is applied sequentially with a delay of 10 time units. The $monitor statement is used to continuously display the output value whenever it changes. This helps in observing the correct encoding behavior for each input condition.
 
 8. Test Cases
+
 | Input (d) | Expected Output (b) |
 | --------- | ------------------- |
 | 0001      | 00                  |
