@@ -85,5 +85,5 @@ The BCD Adder was successfully designed and implemented using Verilog HDL. The s
 OUTPUT WAVEFORM
 
 
-<img width="1081" height="546" alt="Screenshot 2026-06-10 183913" src="https://github.com/user-attachments/assets/bd775a8f-02aa-43dd-b1eb-a260bce0464d" />
+<img width="1493" height="846" alt="WhatsApp Image 2026-06-11 at 9 31 53 AM" src="https://github.com/user-attachments/assets/13f66e9c-26c1-4fa0-8960-c475023915ac" />
 
