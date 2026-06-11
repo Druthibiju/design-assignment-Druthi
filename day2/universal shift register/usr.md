@@ -51,6 +51,7 @@ The design is implemented using a sequential always block triggered on the posit
 The testbench verifies all operating modes of the Universal Shift Register. A clock signal with a period of 10 time units is generated. Initially, reset is applied to initialize the register. After reset is released, different mode combinations are tested sequentially, including shift-right, shift-left, parallel load, and hold operations. Serial and parallel inputs are varied during simulation to observe correct behavior of the register under different conditions.
 
 8. Test Cases
+
 | Mode | Operation                  | Input Condition | Expected Behavior             |
 | ---- | -------------------------- | --------------- | ----------------------------- |
 | 00   | Shift Right                | sin input used  | Right shift with serial input |
