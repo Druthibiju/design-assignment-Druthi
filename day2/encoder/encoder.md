@@ -1,4 +1,6 @@
-4×2 Encoder – Documentation
+4×2 Encoder
+
+
 1. Introduction
 
 The 4×2 Encoder is a combinational logic circuit that converts a 4-line input into a 2-bit binary output. It is a basic digital system component used for data compression, where only one input line is active at a time. The encoder produces a binary code corresponding to the active input line, thereby reducing multiple input lines into fewer output bits.
@@ -15,6 +17,7 @@ The 4×2 Encoder takes four input lines and generates a 2-bit binary output. Onl
 
 
 4. Input and Output Specification
+
 Inputs
 | Signal | Width | Description                   |
 | ------ | ----- | ----------------------------- |
