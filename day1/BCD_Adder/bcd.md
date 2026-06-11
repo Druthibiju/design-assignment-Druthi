@@ -1,10 +1,9 @@
 BCD Adder
 
-BCD Adder using Ripple Carry Adder – Documentation
+
 1. Introduction
 
 The Binary Coded Decimal (BCD) Adder is a combinational arithmetic circuit used to add two 4-bit BCD numbers and produce a valid BCD result. Since binary addition can sometimes generate results greater than 9 (1001 in binary), such outputs are invalid in BCD representation. To correct this, a correction logic is applied by adding 6 (0110) whenever the result exceeds the valid BCD range.
-
 This design uses ripple carry adders as the core addition unit along with correction logic to ensure valid BCD output.
 
 2. Objective
