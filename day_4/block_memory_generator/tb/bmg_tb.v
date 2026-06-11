@@ -1,4 +1,4 @@
-module block_memory_generator_tb(
+module block_generator_tb(
 
     );
     reg clk_tb,arst_tb,wr_enb_tb;
@@ -16,21 +16,21 @@ module block_memory_generator_tb(
     arst_tb=1'b1;
     wr_enb_tb=1'b1;
     wr_address_tb=3'b000;
-    data_in_tb=8'h4f;#10
+    data_in_tb=8'h5b;#10
     wr_address_tb=3'b001;
-    data_in_tb=8'h5f;#10
+    data_in_tb=8'h4f;#10
     wr_address_tb=3'b010;
-    data_in_tb=8'h26;#10
+    data_in_tb=8'h12;#10
     wr_address_tb=3'b011;
-    data_in_tb=8'h85;#10
+    data_in_tb=8'h8a;#10
     wr_address_tb=3'b100;
-    data_in_tb=8'h41;#10
+    data_in_tb=8'h15;#10
     wr_address_tb=3'b101;
-    data_in_tb=8'h76;#10
+    data_in_tb=8'h1c;#10
     wr_address_tb=3'b110;
     data_in_tb=8'h70;#10
     wr_address_tb=3'b111;
-    data_in_tb=8'h12;#10;
+    data_in_tb=8'h6d;#10;
     wr_enb_tb=0;#10;
     rd_address_tb=3'b000;#10;
     rd_address_tb=3'b001;#10;
