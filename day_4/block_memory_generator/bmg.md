@@ -14,6 +14,9 @@ The objective of this design is to implement an 8×8 memory module using Verilog
 The memory module consists of an array of eight 8-bit registers that act as memory locations. The memory is accessed through separate write and read address inputs. During a write operation, data present at the input is stored in the memory location specified by the write address. During a read operation, data stored at the specified read address is transferred to the output.
 An active-low asynchronous reset is provided to initialize all memory locations to zero. This ensures that the memory starts from a known state before normal operation begins.
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0c367866-d9df-478b-bfda-0f26ee5eda25" />
+
+
 4. Input and Output Specification
 
 Inputs
@@ -55,28 +58,29 @@ Write Operations
 
 | Address | Data Written |
 | ------- | ------------ |
-| 000     | 4F           |
-| 001     | 5F           |
-| 010     | 26           |
-| 011     | 85           |
-| 100     | 41           |
-| 101     | 76           |
+| 000     | 5B           |
+| 001     | 4F           |
+| 010     | 12           |
+| 011     | 8A           |
+| 100     | 15           |
+| 101     | 1C           |
 | 110     | 70           |
-| 111     | 12           |
+| 111     | 6D           |
+
 
 
 
 Read Operations
-| Read Address | Expected Data |
-| ------------ | ------------- |
-| 000          | 4F            |
-| 001          | 5F            |
-| 010          | 26            |
-| 011          | 85            |
-| 100          | 41            |
-| 101          | 76            |
-| 110          | 70            |
-| 111          | 12            |
+| Address | Data Written |
+| ------- | ------------ |
+| 000     | 5B           |
+| 001     | 4F           |
+| 010     | 12           |
+| 011     | 8A           |
+| 100     | 15           |
+| 101     | 1C           |
+| 110     | 70           |
+| 111     | 6D           |
 
 
 
@@ -99,3 +103,9 @@ The primary advantage of the block memory generator is its ability to efficientl
 13. Conclusion
 
 The Block Memory Generator was successfully designed and verified using Verilog HDL. The simulation results confirm that the memory correctly performs write and read operations while supporting asynchronous reset functionality. The design demonstrates reliable storage and retrieval of data and serves as a fundamental building block for memory-based digital systems.
+
+
+Output waveform
+
+<img width="1108" height="581" alt="image" src="https://github.com/user-attachments/assets/1df3fc49-6dbe-4d20-b832-1968c9ce3282" />
+
